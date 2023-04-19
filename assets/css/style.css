@@ -117,7 +117,7 @@ body{
 .header .whero{
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -148,7 +148,7 @@ body{
 
 .header .wtabl{
     position: absolute;
-    bottom: 50px;
+    bottom: 25px;
     left: 0;
     right: 0;
     width: 100%;
@@ -159,14 +159,14 @@ body{
     justify-content: space-between;
 }
 .header .wtabl .tabl .item{
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     width: 24%;
     padding: 15px;
     border-radius: 10px;
 }
 .header .wtabl .tabl .item .icon{}
 .header .wtabl .tabl .item .text{
-    color: #fff;
+    color: #333;
 }
 .header .wtabl .tabl .item .text span{
     font-weight: bold;
@@ -240,10 +240,11 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
 }
 .service .boxs .box.uslug .item .img img{
-    max-height: 100%;
-    object-fit: cover;
+    height: 100%;
 }
 .service .boxs .box.uslug .item .text{
     position: absolute;
