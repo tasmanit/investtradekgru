@@ -22,7 +22,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .tlogo{
@@ -134,7 +134,7 @@ body{
 .header .whero .hero .desc{
     margin-bottom: 30px;
     color: #fff;
-    width: 90%;
+    width: 60%;
 }
 .header .whero .hero button{
     background: transparent;
@@ -259,6 +259,7 @@ body{
 .service .boxs .box.uslug .item:hover{
     transform: scale(1.05);
     z-index: 5;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
 .service .boxs .box.dopuslug{
@@ -365,6 +366,20 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
+}
+.whatwedo .boxs .box .items .item .image:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgba(24, 177, 222, 0.5);
+}
+.whatwedo .boxs .box .items .item .image img{
+    height: 100%;
 }
 .whatwedo .boxs .box .items .item .text{
     position: absolute;
@@ -414,11 +429,16 @@ body{
 }
 .flags ul li{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     background: #ECF0F1;
     padding: 10px;
     border-radius: 10px;
+}
+.flags ul li .icon{
+    height: 10px; 
+    margin-right: 5px;
+}
+.flags ul li .icon img{
+    max-height: 100%;
 }
 
 
