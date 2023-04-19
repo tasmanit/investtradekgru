@@ -100,13 +100,10 @@ body{
     position: relative;
 }
 .header .wvideo video {
-    margin-top: 90px;
     right: 0;
     left: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    transform: scale(1.2);
+    min-height: 100vh;
 }
 .header .wvideo:after{
     background: rgba(24, 177, 222, 0.5);
