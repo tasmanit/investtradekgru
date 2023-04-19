@@ -645,7 +645,55 @@ body{
     margin-bottom: 40px;
     font-weight: bold;
 }
-.contact .map{}
+.contact .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact .box .info{
+    width: 35%;
+}
+.contact .box .info .items{
+    display: flex;
+    flex-direction: column;
+}
+.contact .box .info .items .item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.contact .box .info .items .item .icon{
+    margin-right: 15px;
+    background: rgba(24, 177, 222, 1);
+    color: #fff;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.contact .box .info .items .item .text{
+    font-size: 1.2em;
+}
+.contact .box .info .items .item .text a{
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+.contact .box .info .items .item:first-child .icon{
+    background: none;
+}
+.contact .box .info .items .item:first-child .icon img{
+    max-width: 100%;
+}
+.contact .box .map{
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
 
 
 /* copyright */
