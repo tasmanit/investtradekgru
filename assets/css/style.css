@@ -117,7 +117,7 @@ body{
 .header .whero{
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -361,6 +361,7 @@ body{
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    transition: 0.5s;
 }
 .whatwedo .boxs .box .items .item .image{
     position: absolute;
@@ -391,7 +392,11 @@ body{
     font-weight: bold;
     text-align: center;
 }
-
+.whatwedo .boxs .box .items .item:hover{
+    transform: scale(1.05);
+    z-index: 5;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
 
 /* world */
 .wworld{
@@ -491,11 +496,11 @@ body{
 
     margin-bottom: 15px;
 }
+
 .priveleg .item .icon{
     font-weight: bold;
     padding: 10px 0;
     margin-bottom: 15px;
-    min-height: 60px;
     border-bottom: 1px solid #333;
     color: rgba(24, 177, 222, 1);
 }
@@ -640,6 +645,7 @@ body{
     list-style: none;
     display: flex;   
     flex-wrap: wrap;
+    padding-left:0;
 }
 .partner ul li{
     width: 25%;
@@ -714,7 +720,9 @@ body{
     overflow: hidden;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
-
+.contact .box .map .layout-control-group{
+    display: none;
+}
 
 /* copyright */
 .copyright{
@@ -722,4 +730,121 @@ body{
     padding: 15px 0;
     font-size: 0.9em;
     color: #333;
+}
+
+
+
+
+
+@media (max-width: 540px){
+    
+    /* service */
+    .service .boxs{
+        flex-direction: column;
+    }
+    .service .boxs .box.text,
+    .service .boxs .box.uslug{
+        width: 100%;
+    }
+    .service .boxs .box.uslug .item .text{
+        transform: rotate(-90deg);
+    }
+    .service .boxs .box.dopuslug{
+        flex-direction: column;
+        
+    }
+    .service .boxs .box.dopuslug .item{
+        width: 100%;
+    }
+
+    /* whatwedo */
+    .whatwedo .boxs .box{
+        flex-direction: column;
+    }
+    .whatwedo .boxs .box .items{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .whatwedo .boxs .box .content{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .whatwedo .boxs .box .items{
+        flex-wrap: wrap;
+    }
+    .whatwedo .boxs .box .items .item{
+        width: 48%;
+        margin-bottom: 15px;
+    }
+    
+    /* priveleg */
+    .priveleg .boxs{
+        flex-direction: column;
+
+    }
+    .priveleg .boxs .box:nth-child(1),
+    .priveleg .boxs .box:nth-child(2),
+    .priveleg .boxs .box:nth-child(3){
+        width: 100%;
+    }
+
+    /* jobstep */
+    .jobstep .items{
+        flex-direction: column;
+    }
+    .jobstep .items .item{
+        width: 100%;
+    }
+
+    /* aboutus */
+    .laboutus .items{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .laboutus .items .item{
+        width: 50%;
+    }
+    .raboutus .text{
+        bottom: -80px;
+    }
+
+    /* partner */
+    .partner{
+        flex-direction: column;
+    }
+    .partner .item .title{
+        text-align: center;
+    }
+    .partner .item .desc{
+        text-align: center;
+    }
+    .partner .item:nth-child(1){
+        width: 100%;
+    }
+    .partner .item:nth-child(2){
+        width: 100%;
+    }
+    .partner ul li{
+        width: 49%;
+    }
+
+    /* world */
+    .world .items{
+        flex-direction: column;
+    }
+    .flags ul{
+        flex-wrap: wrap;
+    }
+    .flags ul li{
+        width: 45%;
+    }
+
+    /* contact */
+    .contact .box{
+        flex-direction: column;
+    }
+    .contact .box .info,
+    .contact .box .map{
+        width: 100%;
+    }
 }
