@@ -397,6 +397,40 @@ body{
     z-index: 5;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
+.whatwedo .wcars{}
+.whatwedo .wcars .title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.whatwedo .wcars .desc{
+    text-align: center;
+}
+
+.whatwedo .wcars .items{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.whatwedo .wcars .items .item{
+    width: 15%;
+    text-align: center;
+
+}
+.whatwedo .wcars .items .item .icon{
+    min-height: 160px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.whatwedo .wcars .items .item .icon img{
+    max-width: 100%;
+}
+.whatwedo .wcars .items .item .num{
+    color: rgba(24, 177, 222, 1);
+    font-size: 4em;
+    font-weight: bold;
+}
+.whatwedo .wcars .items .item .text{}
 
 /* world */
 .wworld{
