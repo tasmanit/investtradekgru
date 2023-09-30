@@ -9,3 +9,37 @@ $('.count').each(function () {
       }
      });
  });
+
+ $('.owl-cars').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:6
+        }
+    }
+});
+$('.owl-flags').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoWidth:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    responsive:{
+        0:{
+            items:2
+        },
+        1000:{
+            items:8
+        }
+    }
+});

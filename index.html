@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="assets/img/investtrade-logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
     <title>InvestTrade | Международные перевозки грузов всеми видами транспорта</title>
 </head>
 <body>
@@ -27,15 +29,22 @@
                             <div class="icon"><img src="assets/img/investtrade-logo.svg" alt=""></div>
                             <div class="desc">Международные перевозки грузов<br>всеми видами транспорта</div>
                         </div>
-                        <div class="tmedia">
-                            <a href=""><i class="fa-brands fa-whatsapp"></i><span>Написать в Whatsapp</span></a>
+                        <div class="media">
+                            <div class="tmedia">
+                                <a href=""><i class="fa-brands fa-whatsapp"></i><span>Написать в Whatsapp</span></a>
+                            </div>
+                            <div class="tphone">
+                                <div class="phone"><a href="tel:+996500265000">+996 (500) 265 000</a></div>
+                                <div class="desc">Пишите и звоните</div>
+                            </div>
+                            <div class="tbutton">
+                                <button>Заказать звонок</button>
+                            </div>
                         </div>
-                        <div class="tphone">
-                            <div class="phone"><a href="tel:+996500265000">+996 (500) 265 000</a></div>
-                            <div class="desc">Пишите и звоните</div>
-                        </div>
-                        <div class="tbutton">
-                            <button>Заказать звонок</button>
+                        <div class="call-btn">
+                            <div class="call">
+                                <button data-fancybox href="#hidden"><i class="fa-solid fa-phone"></i></button>
+                            </div>
                         </div>
                     </div>
                     </div>
@@ -242,7 +251,8 @@
                                 <div class="wcars">
                                     <div class="title">Наш парк</div>
                                     <div class="desc">К услугам наших клиентов – большой парк автомобильной техники.</div>
-                                    <div class="items">
+                                    
+                                        <div class="owl-carousel owl-cars owl-theme items" >
                                         <div class="item">
                                             <div class="icon"><img src="assets/img/cars/noroot_2.jpg" alt=""></div>
                                             <div class="num count">25</div>
@@ -275,6 +285,7 @@
                                             <div class="text">тентов</div>
                                         </div>
                                     </div>
+                                    
                                 </div>
                                 
 
@@ -302,44 +313,45 @@
                                     </div>
                                 </div>
                                 <div class="flags">
-                                    <ul>
-                                        <li>
+                                    <div class="owl-carousel owl-flags owl-theme items">
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_Russia.svg" alt=""></div>
                                             <div class="desc">Россия</div>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_Belarus_(1995–2012).svg" alt=""></div>
                                             <div class="desc">Беларусь</div>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_Turkey.svg" alt=""></div>
                                             <div class="desc">Турция</div>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_Germany.svg.webp" alt=""></div>
                                             <div class="desc">Германия</div>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_Lithuania.svg.png" alt=""></div>
                                             <div class="desc">Литва</div>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_South_Korea.svg.png" alt=""></div>
                                             <div class="desc">Корея</div>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_the_People's_Republic_of_China.svg.png" alt=""></div>
                                             <div class="desc">Китай</div>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_Kazakhstan.svg" alt=""></div>
                                             <div class="desc">Казахстан</div>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <div class="icon"><img src="assets/img/flag/Flag_of_Uzbekistan.svg.png" alt=""></div>
                                             <div class="desc">Узбекистан</div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -566,14 +578,27 @@
                 </div>
             </div>
         </footer>
+        <div style="display: none; width: 500px;" id="hidden">
+            <h2>Контент из скрытого div</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim
+                vulputate eros. 
+            </p>
+            <p>
+                Donec hendrerit efficitur ex vitae euismod. Maecenas ut leo vitae ipsum dictum 
+                cursus vel vitae nulla.
+            </p>
+        </div>
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>new WOW().init();</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
     
 </body>

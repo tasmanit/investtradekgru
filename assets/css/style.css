@@ -29,6 +29,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 50px;
 }
 .tlogo .icon{
     width: 70px;
@@ -46,7 +47,12 @@ body{
     font-size: 1em;
     margin-left: 15px;
 }
-
+.media{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .tmedia{}
 .tmedia a{
     padding: 10px 20px;
@@ -57,6 +63,9 @@ body{
 
     
     font-size: 1.2em;
+}
+.tmedia a:hover{
+    color: #fff;
 }
 .tmedia a span{
     margin-left: 10px;
@@ -90,10 +99,25 @@ body{
     border: none;
     font-weight: bold;
 }
+.call-btn{
+    display: none;
+}
+.call-btn .call{}
+.call-btn .call button{
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background: rgba(24, 177, 222, 1);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
 
 .header{
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 .header .wvideo {
     overflow: hidden;
@@ -106,7 +130,7 @@ body{
     min-height: 100vh;
 }
 .header .wvideo:after{
-    background: rgba(24, 177, 222, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     content: '';
     top: 0;
     left: 0;
@@ -377,7 +401,7 @@ body{
     right: 0;
     bottom: 0;
     content: '';
-    background: rgba(24, 177, 222, 0.5);
+    background: rgba(0, 0, 0, 0.2);
 }
 .whatwedo .boxs .box .items .item .image img{
     height: 100%;
@@ -408,11 +432,22 @@ body{
 
 .whatwedo .wcars .items{
     margin-top: 30px;
-    display: flex;
     justify-content: space-between;
 }
+.whatwedo .wcars .items .owl-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatwedo .wcars .items .owl-nav button{
+    display: none;
+    padding: 10px !important;
+    background: #ECF0F1;
+}
+.whatwedo .wcars .items .owl-nav button.owl-prev{
+    margin-right: 10px !important;
+}
 .whatwedo .wcars .items .item{
-    width: 15%;
     text-align: center;
 
 }
@@ -459,25 +494,32 @@ body{
 .flags{
     margin-top: 30px;
 }
-.flags ul{
+.flags .owl-nav{
+    display: none;
+}
+.flags .items{
     margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 0;
+    overflow: hidden;
 }
-.flags ul li{
+.flags .items .item{
     display: flex;
     background: #ECF0F1;
     padding: 10px;
     border-radius: 10px;
+    align-items: center;
+    width: auto;
 }
-.flags ul li .icon{
+.flags .items .item .icon{
     height: 10px; 
     margin-right: 5px;
 }
-.flags ul li .icon img{
+.flags .items .item .icon img{
     max-height: 100%;
+    width: auto;
 }
 
 
@@ -772,7 +814,46 @@ body{
 
 @media (max-width: 540px){
     
+    /* topline */
+    .tlogo .desc{
+        display: none;
+    }
+    .media{
+        display: none;
+    }
+    .call-btn{
+        display: block;
+    }
+    .header{
+        height: 150vh;
+    }
+    .header .wvideo video {
+        min-height: 150vh;
+    }
+
+    .header .whero .hero{
+        width: 100%;
+    }
+    .header .whero .hero h1{
+        font-size: 2em;
+    }
+    .header .whero .hero .desc{
+        width: 100%;
+    }
+    .header .wtabl .tabl{
+        flex-wrap: wrap;
+    }
+    .header .wtabl .tabl .item{
+        width: 48%;
+        min-height: 110px;
+        margin-bottom: 7px;
+    }
+
     /* service */
+    .service .title{
+        width: 100%;
+        font-size: 1.5em;
+    }
     .service .boxs{
         flex-direction: column;
     }
@@ -782,6 +863,9 @@ body{
     }
     .service .boxs .box.uslug .item .text{
         transform: rotate(-90deg);
+        white-space: nowrap;
+        text-align: left;
+        bottom: 40px;
     }
     .service .boxs .box.dopuslug{
         flex-direction: column;
@@ -792,6 +876,9 @@ body{
     }
 
     /* whatwedo */
+    .whatwedo .title{
+        font-size: 1.5em;
+    }
     .whatwedo .boxs .box{
         flex-direction: column;
     }
@@ -810,6 +897,12 @@ body{
         width: 48%;
         margin-bottom: 15px;
     }
+    .whatwedo .wcars .title{
+        font-size: 1.5em;
+    }
+    .whatwedo .wcars .items .owl-nav button{
+        display: block;
+    }
     
     /* priveleg */
     .priveleg .boxs{
@@ -823,14 +916,22 @@ body{
     }
 
     /* jobstep */
+    .jobstep .title{
+        font-size: 1.5em;
+    }
     .jobstep .items{
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .jobstep .items .item{
-        width: 100%;
+        width: 48%;
+        margin-bottom: 7px;
     }
 
     /* aboutus */
+    .laboutus .title{
+        font-size: 1.5em;
+        text-align: center;
+    }
     .laboutus .items{
         flex-wrap: wrap;
         align-items: flex-start;
@@ -848,6 +949,7 @@ body{
     }
     .partner .item .title{
         text-align: center;
+        font-size: 1.5em;
     }
     .partner .item .desc{
         text-align: center;
@@ -863,17 +965,22 @@ body{
     }
 
     /* world */
+    .world .title{
+        font-size: 1.5em;
+    }
     .world .items{
         flex-direction: column;
     }
-    .flags ul{
-        flex-wrap: wrap;
-    }
-    .flags ul li{
-        width: 45%;
+
+    /* priveleg */
+    .priveleg .title{
+        font-size: 1.5em;
     }
 
     /* contact */
+    .contact .title{
+        font-size: 1.5em;
+    }
     .contact .box{
         flex-direction: column;
     }
