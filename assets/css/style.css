@@ -809,6 +809,53 @@ body{
 }
 
 
+/* call-box */
+.fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content{
+    padding: 30px !important;
+}
+.callbox{
+    border-radius: 15px;
+}
+.callbox h2{
+    font-family: 'Play', sans-serif;
+    margin-bottom: 25px;
+    color: rgb(24, 177, 222);
+    font-weight: bold;
+}
+.callbox h2 span{
+    color: #333;
+}
+.callbox .call-content{}
+.callbox .call-content ul{
+    list-style: none;
+    padding-left: 0;
+}
+.callbox .call-content ul li{
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.callbox .call-content ul li:nth-child(1){
+    background-color: rgba(37, 211, 102, 1);
+}
+.callbox .call-content ul li:nth-child(1) a{
+    color: #fff;
+}
+.callbox .call-content ul li a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+.callbox .call-content ul li a:hover{
+    color: #fff;
+    background: #ccc;
+    border-radius: 15px;
+}
+.callbox .call-content ul li span{
+    margin-left: 15px;
+}
+
 
 
 
@@ -825,10 +872,10 @@ body{
         display: block;
     }
     .header{
-        height: 150vh;
+        height: 130vh;
     }
     .header .wvideo video {
-        min-height: 150vh;
+        min-height: 130vh;
     }
 
     .header .whero .hero{
@@ -902,6 +949,10 @@ body{
     }
     .whatwedo .wcars .items .owl-nav button{
         display: block;
+    }
+    .whatwedo .wcars .items .owl-nav button span{
+        font-size: 2em;
+        color: #333;
     }
     
     /* priveleg */

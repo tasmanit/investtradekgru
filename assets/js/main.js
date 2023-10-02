@@ -14,7 +14,8 @@ $('.count').each(function () {
     loop:true,
     margin:10,
     nav:true,
-    
+    autoplay:true,
+    autoplayTimeout:5000,
     responsive:{
         0:{
             items:2
@@ -30,12 +31,15 @@ $('.count').each(function () {
 $('.owl-flags').owlCarousel({
     loop:true,
     margin:10,
-    nav:false,
+    nav:true,
     autoWidth:true,
     autoplay:true,
     autoplayTimeout:5000,
     responsive:{
         0:{
+            items:2
+        },
+        600:{
             items:2
         },
         1000:{
