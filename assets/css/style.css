@@ -894,8 +894,12 @@ body{
     .header .whero .hero{
         width: 100%;
     }
+    .header .whero{
+        top: 20%;
+    }
     .header .whero .hero h1{
         font-size: 2em;
+        width: 85%;
     }
     .header .whero .hero .desc{
         width: 100%;
