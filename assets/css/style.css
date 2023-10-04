@@ -885,10 +885,10 @@ body{
         display: block;
     }
     .header{
-        height: 130vh;
+        height: 110vh;
     }
     .header .wvideo video {
-        min-height: 130vh;
+        min-height: 110vh;
     }
 
     .header .whero .hero{
