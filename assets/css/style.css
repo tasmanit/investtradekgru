@@ -154,12 +154,15 @@ body{
     font-weight: bold;
     font-size: 3em;
     margin-bottom: 15px;
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
+}
+.header .whero .hero h1 span{
+    color:yellow !important;
 }
 .header .whero .hero .desc{
     margin-bottom: 30px;
     color: #fff;
-    width: 60%;
+    width: 70%;
 }
 .header .whero .hero button{
     background: transparent;
@@ -186,7 +189,6 @@ body{
     
     background: #fff;
     border-radius: 15px 15px 0 0;
-    /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
 }
 .header .wtabl .tabl .item{
     
@@ -199,18 +201,8 @@ body{
     justify-content: space-between;
 }
 .header .wtabl .tabl .item .icon{
-    /* width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -30px;
-    left: 0;
-    background: #fff;
-    border-radius: 15px 15px 0 0 ; */
+    color: #ccc;
     padding: 15px;
-    color: rgba(24, 177, 222, 1);
     font-size: 1.5em;
 }
 .header .wtabl .tabl .item .text{
@@ -359,7 +351,7 @@ body{
 .service .boxs .box.dopuslug .item .content .title{
     font-size: 1em;
     text-align: left;
-    color: #fff;
+    color: yellow;
     margin: 0;
     margin-bottom: 10px;
 }
@@ -909,12 +901,13 @@ body{
         width: 100%;
     }
     .header .wtabl .tabl{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .header .wtabl .tabl .item{
-        width: 48%;
-        min-height: 110px;
-        margin-bottom: 7px;
+        width: 100%;
+    }
+    .header .wtabl .tabl .item .icon{
+        padding: 10px;
     }
 
     /* service */
